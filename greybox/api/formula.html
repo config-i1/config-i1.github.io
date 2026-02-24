@@ -62,7 +62,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="selection.html">Selection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html">Measures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rolling.html">Rolling Origin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html">Error Measures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="association.html">Association</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hm.html">Half-Moments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quantile_measures.html">Quantile Measures</a></li>
@@ -71,6 +72,7 @@
 <li class="toctree-l2"><a class="reference internal" href="distributions.html">Distributions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#core-classes">Core Classes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#model-selection">Model Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#rolling-origin">Rolling Origin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#accuracy-measures">Accuracy Measures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#association-measures">Association Measures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#half-moments">Half-Moments</a></li>
@@ -115,7 +117,7 @@
 <h1>Formula<a class="headerlink" href="#formula" title="Link to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="greybox.formula.formula">
-<span class="sig-prename descclassname"><span class="pre">greybox.formula.</span></span><span class="sig-name descname"><span class="pre">formula</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula_str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'both'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/greybox/formula.html#formula"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#greybox.formula.formula" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">greybox.formula.</span></span><span class="sig-name descname"><span class="pre">formula</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'both'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_dataframe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="../_modules/greybox/formula.html#formula"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#greybox.formula.formula" title="Link to this definition"></a></dt>
 <dd><p>Parse formula string and return design matrix and/or response.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

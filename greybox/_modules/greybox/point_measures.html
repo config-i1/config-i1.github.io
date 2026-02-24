@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>greybox.measures &mdash; greybox 1.0.0 documentation</title>
+  <title>greybox.point_measures &mdash; greybox 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
 
@@ -67,7 +67,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
-      <li class="breadcrumb-item active">greybox.measures</li>
+      <li class="breadcrumb-item active">greybox.point_measures</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -76,7 +76,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for greybox.measures</h1><div class="highlight"><pre>
+  <h1>Source code for greybox.point_measures</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;Statistical error measures for model evaluation.</span>
 
 <span class="sd">This module provides functions for calculating various statistical error measures</span>
@@ -150,7 +150,7 @@
 
 
 <div class="viewcode-block" id="me">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.me">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.me">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">me</span><span class="p">(</span><span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Mean Error (ME).</span>
 
@@ -192,7 +192,7 @@
 
 
 <div class="viewcode-block" id="mae">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.mae">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.mae">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">mae</span><span class="p">(</span><span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Mean Absolute Error (MAE).</span>
 
@@ -234,7 +234,7 @@
 
 
 <div class="viewcode-block" id="mse">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.mse">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.mse">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">mse</span><span class="p">(</span><span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Mean Squared Error (MSE).</span>
 
@@ -275,7 +275,7 @@
 
 
 <div class="viewcode-block" id="rmse">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.rmse">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.rmse">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rmse</span><span class="p">(</span><span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Root Mean Squared Error (RMSE).</span>
 
@@ -315,7 +315,7 @@
 
 
 <div class="viewcode-block" id="mpe">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.mpe">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.mpe">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">mpe</span><span class="p">(</span><span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Mean Percentage Error (MPE).</span>
 
@@ -367,7 +367,7 @@
 
 
 <div class="viewcode-block" id="mape">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.mape">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.mape">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">mape</span><span class="p">(</span><span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Mean Absolute Percentage Error (MAPE).</span>
 
@@ -421,7 +421,7 @@
 
 
 <div class="viewcode-block" id="mase">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.mase">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.mase">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">mase</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -485,7 +485,7 @@
 
 
 <div class="viewcode-block" id="rmsse">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.rmsse">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.rmsse">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rmsse</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -541,7 +541,7 @@
 
 
 <div class="viewcode-block" id="same">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.same">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.same">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">same</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -597,7 +597,7 @@
 
 
 <div class="viewcode-block" id="rmae">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.rmae">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.rmae">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rmae</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -666,7 +666,7 @@
 
 
 <div class="viewcode-block" id="rrmse">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.rrmse">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.rrmse">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rrmse</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -731,7 +731,7 @@
 
 
 <div class="viewcode-block" id="rame">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.rame">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.rame">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rame</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -801,7 +801,7 @@
 
 
 <div class="viewcode-block" id="smse">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.smse">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.smse">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">smse</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -856,7 +856,7 @@
 
 
 <div class="viewcode-block" id="spis">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.spis">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.spis">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">spis</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -912,7 +912,7 @@
 
 
 <div class="viewcode-block" id="sce">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.sce">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.sce">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">sce</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -965,7 +965,7 @@
 
 
 <div class="viewcode-block" id="gmrae">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.gmrae">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.gmrae">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">gmrae</span><span class="p">(</span>
     <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -1037,49 +1037,8 @@
 
 
 
-<div class="viewcode-block" id="accuracy">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.accuracy">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">accuracy</span><span class="p">(</span>
-    <span class="n">actual</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
-    <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
-    <span class="n">na_rm</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate multiple accuracy measures at once.</span>
-
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    actual : np.ndarray</span>
-<span class="sd">        Actual (observed) values.</span>
-<span class="sd">    forecast : np.ndarray</span>
-<span class="sd">        Forecasted values.</span>
-<span class="sd">    na_rm : bool, default=True</span>
-<span class="sd">        Remove NA values.</span>
-
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    dict</span>
-<span class="sd">        Dictionary containing: ME, MAE, MSE, RMSE, MPE, MAPE, MASE.</span>
-
-<span class="sd">    Examples</span>
-<span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; actual = np.array([1, 2, 3, 4, 5])</span>
-<span class="sd">    &gt;&gt;&gt; forecast = np.array([1.1, 2.0, 3.2, 3.9, 5.1])</span>
-<span class="sd">    &gt;&gt;&gt; accuracy(actual, forecast)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">{</span>
-        <span class="s2">&quot;ME&quot;</span><span class="p">:</span> <span class="n">me</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">),</span>
-        <span class="s2">&quot;MAE&quot;</span><span class="p">:</span> <span class="n">mae</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">),</span>
-        <span class="s2">&quot;MSE&quot;</span><span class="p">:</span> <span class="n">mse</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">),</span>
-        <span class="s2">&quot;RMSE&quot;</span><span class="p">:</span> <span class="n">rmse</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">),</span>
-        <span class="s2">&quot;MPE&quot;</span><span class="p">:</span> <span class="n">mpe</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">),</span>
-        <span class="s2">&quot;MAPE&quot;</span><span class="p">:</span> <span class="n">mape</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">),</span>
-        <span class="s2">&quot;MASE&quot;</span><span class="p">:</span> <span class="n">mase</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">na_rm</span><span class="o">=</span><span class="n">na_rm</span><span class="p">),</span>
-    <span class="p">}</span></div>
-
-
-
 <div class="viewcode-block" id="measures">
-<a class="viewcode-back" href="../../api/measures.html#greybox.measures.measures">[docs]</a>
+<a class="viewcode-back" href="../../api/error_measures.html#greybox.point_measures.measures">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">measures</span><span class="p">(</span>
     <span class="n">holdout</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
     <span class="n">forecast</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
@@ -1111,29 +1070,18 @@
 <span class="sd">    -------</span>
 <span class="sd">    dict</span>
 <span class="sd">        Dictionary containing error measures:</span>
-<span class="sd">        - ME: Mean Error</span>
-<span class="sd">        - MAE: Mean Absolute Error</span>
-<span class="sd">        - MSE: Mean Squared Error</span>
-<span class="sd">        - MPE: Mean Percentage Error</span>
-<span class="sd">        - MAPE: Mean Absolute Percentage Error</span>
-<span class="sd">        - sCE: Scaled Cumulative Error</span>
-<span class="sd">        - sMAE: Scaled Mean Absolute Error (MASE with mean scale)</span>
-<span class="sd">        - sMSE: Scaled Mean Squared Error</span>
-<span class="sd">        - MASE: Mean Absolute Scaled Error (with diff scale)</span>
-<span class="sd">        - RMSSE: Root Mean Squared Scaled Error</span>
-<span class="sd">        - SAME: Scaled Absolute Mean Error</span>
-<span class="sd">        - rMAE: Relative Mean Absolute Error</span>
-<span class="sd">        - rRMSE: Relative Root Mean Squared Error</span>
-<span class="sd">        - rAME: Relative Absolute Mean Error</span>
-<span class="sd">        - asymmetry: Asymmetry coefficient</span>
-<span class="sd">        - sPIS: Scaled Periods-In-Stock</span>
+<span class="sd">        ME, MAE, MSE, MPE, MAPE, sCE, sMAE, sMSE, MASE,</span>
+<span class="sd">        RMSSE, SAME, rMAE, rRMSE, rAME, asymmetry, sPIS</span>
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; np.random.seed(42)</span>
-<span class="sd">    &gt;&gt;&gt; actual = np.random.normal(10, 2, 100)</span>
-<span class="sd">    &gt;&gt;&gt; forecast = np.full(10, np.mean(actual[:90]))</span>
-<span class="sd">    &gt;&gt;&gt; measures(actual[91:], forecast, actual[:90], digits=5)</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; from greybox.point_measures import measures</span>
+<span class="sd">    &gt;&gt;&gt; actual = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])</span>
+<span class="sd">    &gt;&gt;&gt; forecast = np.array([1.1, 2.0, 3.2, 3.9, 5.1, 6.0, 7.1, 8.0, 9.2])</span>
+<span class="sd">    &gt;&gt;&gt; result = measures(actual[5:], forecast[5:], actual[:5], digits=4)</span>
+<span class="sd">    &gt;&gt;&gt; print(result)</span>
+<span class="sd">    {&#39;ME&#39;: ..., &#39;MAE&#39;: ..., ...}</span>
 
 <span class="sd">    References</span>
 <span class="sd">    ----------</span>

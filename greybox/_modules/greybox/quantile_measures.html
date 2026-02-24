@@ -315,9 +315,9 @@
 <span class="sd">    See Gneiting &amp; Raftery (2007).</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">scale</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">mis</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">lower</span><span class="p">,</span> <span class="n">upper</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">)</span> <span class="o">/</span> <span class="n">scale</span></div>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">mis</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">lower</span><span class="p">,</span> <span class="n">upper</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">na_rm</span><span class="p">)</span> <span class="o">/</span> <span class="n">scale</span><span class="p">)</span></div>
 
 
 

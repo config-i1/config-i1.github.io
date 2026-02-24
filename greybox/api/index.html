@@ -50,7 +50,8 @@
 <li class="toctree-l2"><a class="reference internal" href="alm.html">ALM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="formula.html">Formula</a></li>
 <li class="toctree-l2"><a class="reference internal" href="selection.html">Selection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html">Measures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rolling.html">Rolling Origin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html">Error Measures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="association.html">Association</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hm.html">Half-Moments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quantile_measures.html">Quantile Measures</a></li>
@@ -59,6 +60,7 @@
 <li class="toctree-l2"><a class="reference internal" href="distributions.html">Distributions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#core-classes">Core Classes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#model-selection">Model Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rolling-origin">Rolling Origin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#accuracy-measures">Accuracy Measures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#association-measures">Association Measures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#half-moments">Half-Moments</a></li>
@@ -121,25 +123,29 @@
 <li class="toctree-l2"><a class="reference internal" href="selection.html#greybox.selection.stepwise"><code class="docutils literal notranslate"><span class="pre">stepwise()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="measures.html">Measures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.accuracy"><code class="docutils literal notranslate"><span class="pre">accuracy()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.gmrae"><code class="docutils literal notranslate"><span class="pre">gmrae()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.mae"><code class="docutils literal notranslate"><span class="pre">mae()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.mape"><code class="docutils literal notranslate"><span class="pre">mape()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.mase"><code class="docutils literal notranslate"><span class="pre">mase()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.me"><code class="docutils literal notranslate"><span class="pre">me()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.measures"><code class="docutils literal notranslate"><span class="pre">measures()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.mpe"><code class="docutils literal notranslate"><span class="pre">mpe()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.mse"><code class="docutils literal notranslate"><span class="pre">mse()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.rame"><code class="docutils literal notranslate"><span class="pre">rame()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.rmae"><code class="docutils literal notranslate"><span class="pre">rmae()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.rmse"><code class="docutils literal notranslate"><span class="pre">rmse()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.rmsse"><code class="docutils literal notranslate"><span class="pre">rmsse()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.rrmse"><code class="docutils literal notranslate"><span class="pre">rrmse()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.same"><code class="docutils literal notranslate"><span class="pre">same()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.sce"><code class="docutils literal notranslate"><span class="pre">sce()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.smse"><code class="docutils literal notranslate"><span class="pre">smse()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="measures.html#greybox.measures.spis"><code class="docutils literal notranslate"><span class="pre">spis()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rolling.html">Rolling Origin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rolling.html#greybox.rolling.rolling_origin"><code class="docutils literal notranslate"><span class="pre">rolling_origin()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="rolling.html#rollingoriginresult">RollingOriginResult</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="error_measures.html">Error Measures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.gmrae"><code class="docutils literal notranslate"><span class="pre">gmrae()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.mae"><code class="docutils literal notranslate"><span class="pre">mae()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.mape"><code class="docutils literal notranslate"><span class="pre">mape()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.mase"><code class="docutils literal notranslate"><span class="pre">mase()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.me"><code class="docutils literal notranslate"><span class="pre">me()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.measures"><code class="docutils literal notranslate"><span class="pre">measures()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.mpe"><code class="docutils literal notranslate"><span class="pre">mpe()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.mse"><code class="docutils literal notranslate"><span class="pre">mse()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.rame"><code class="docutils literal notranslate"><span class="pre">rame()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.rmae"><code class="docutils literal notranslate"><span class="pre">rmae()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.rmse"><code class="docutils literal notranslate"><span class="pre">rmse()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.rmsse"><code class="docutils literal notranslate"><span class="pre">rmsse()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.rrmse"><code class="docutils literal notranslate"><span class="pre">rrmse()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.same"><code class="docutils literal notranslate"><span class="pre">same()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.sce"><code class="docutils literal notranslate"><span class="pre">sce()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.smse"><code class="docutils literal notranslate"><span class="pre">smse()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="error_measures.html#greybox.point_measures.spis"><code class="docutils literal notranslate"><span class="pre">spis()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="association.html">Association</a><ul>
@@ -290,14 +296,22 @@
 <li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.CALM()</span></code> - Combine ALM models based on IC weights</p></li>
 </ul>
 </section>
+<section id="rolling-origin">
+<h2>Rolling Origin<a class="headerlink" href="#rolling-origin" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.rolling_origin()</span></code> - Rolling origin time-series cross-validation</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">greybox.rolling.RollingOriginResult</span></code> - Result object with holdout and forecast matrices</p></li>
+</ul>
+</section>
 <section id="accuracy-measures">
 <h2>Accuracy Measures<a class="headerlink" href="#accuracy-measures" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.measures.MAE()</span></code> - Mean Absolute Error</p></li>
-<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.measures.MSE()</span></code> - Mean Squared Error</p></li>
-<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.measures.RMSE()</span></code> - Root Mean Squared Error</p></li>
-<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.measures.MAPE()</span></code> - Mean Absolute Percentage Error</p></li>
-<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.measures.MASE()</span></code> - Mean Absolute Scaled Error</p></li>
+<li><p><a class="reference internal" href="error_measures.html#greybox.point_measures.mae" title="greybox.point_measures.mae"><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.point_measures.mae()</span></code></a> - Mean Absolute Error</p></li>
+<li><p><a class="reference internal" href="error_measures.html#greybox.point_measures.mse" title="greybox.point_measures.mse"><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.point_measures.mse()</span></code></a> - Mean Squared Error</p></li>
+<li><p><a class="reference internal" href="error_measures.html#greybox.point_measures.rmse" title="greybox.point_measures.rmse"><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.point_measures.rmse()</span></code></a> - Root Mean Squared Error</p></li>
+<li><p><a class="reference internal" href="error_measures.html#greybox.point_measures.mape" title="greybox.point_measures.mape"><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.point_measures.mape()</span></code></a> - Mean Absolute Percentage Error</p></li>
+<li><p><a class="reference internal" href="error_measures.html#greybox.point_measures.mase" title="greybox.point_measures.mase"><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.point_measures.mase()</span></code></a> - Mean Absolute Scaled Error</p></li>
+<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">greybox.measures()</span></code> - Comprehensive error measures</p></li>
 </ul>
 </section>
 <section id="association-measures">

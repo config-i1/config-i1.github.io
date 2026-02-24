@@ -8,7 +8,8 @@ API
    alm
    formula
    selection
-   measures
+   rolling
+   error_measures
    association
    hm
    quantile_measures
@@ -32,14 +33,21 @@ Model Selection
 * :func:`greybox.stepwise` - Stepwise IC-based variable selection
 * :func:`greybox.CALM` - Combine ALM models based on IC weights
 
+Rolling Origin
+--------------
+
+* :func:`greybox.rolling_origin` - Rolling origin time-series cross-validation
+* :class:`greybox.rolling.RollingOriginResult` - Result object with holdout and forecast matrices
+
 Accuracy Measures
 -----------------
 
-* :func:`greybox.measures.MAE` - Mean Absolute Error
-* :func:`greybox.measures.MSE` - Mean Squared Error
-* :func:`greybox.measures.RMSE` - Root Mean Squared Error
-* :func:`greybox.measures.MAPE` - Mean Absolute Percentage Error
-* :func:`greybox.measures.MASE` - Mean Absolute Scaled Error
+* :func:`greybox.point_measures.mae` - Mean Absolute Error
+* :func:`greybox.point_measures.mse` - Mean Squared Error
+* :func:`greybox.point_measures.rmse` - Root Mean Squared Error
+* :func:`greybox.point_measures.mape` - Mean Absolute Percentage Error
+* :func:`greybox.point_measures.mase` - Mean Absolute Scaled Error
+* :func:`greybox.measures` - Comprehensive error measures
 
 Association Measures
 --------------------
